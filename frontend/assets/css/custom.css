@@ -1,0 +1,138 @@
+.btn-cus1 {
+    transition: all .5s ease;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 1;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+}
+
+.btn-cus1:hover {
+    background-color: #dcb14a;
+    color: #fff;
+    border: 1px solid #dcb14a;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-box {
+    position: relative;
+    display: block;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #000;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+.btn-box::before{
+    color: #fff;
+    background: #000;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.7s ease;
+}
+
+.btn1::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.btn1:hover::before{
+    height: 380%;
+}
+
+.active {
+    color: #dcb14a !important;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 20px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: #dcb14a;
+    border-radius: 25px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px 0 rgba(0,0,0, 1);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #dcb14a;
+}
+
+.range-wrap{
+    width: 100%;
+    position: relative;
+}
+
+.range-value{
+    position: absolute;
+    top: -50%;
+}
+
+.range-value span{
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background: #d5d5d5;
+    color: #000;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 6px;
+}
+
+.range-value span:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #d5d5d5;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -1px;
+}
+
+.cart-table-content table thead > tr th {
+    padding: 0 !important;
+}
